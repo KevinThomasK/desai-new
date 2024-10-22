@@ -38,7 +38,7 @@ export default function Home8({
                 className="section-descr dark-white mb-40"
                 style={{ textTransform: "capitalize" }}
               >
-                Be part of Kerala's first{" "}
+                Be part of Kerala&apos;s first{" "}
                 <span style={{ color: "#119D60", fontWeight: "500" }}>
                   Sports-themed
                 </span>{" "}
@@ -171,10 +171,10 @@ export default function Home8({
           <div className="row mb-80 mb-sm-60">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                Let’s have a conversation
+                Lets have a conversation
               </h2>
               <p className="section-descr dark-white mb-0">
-                We’re open to talking to good people. Just say hello, and we’ll
+                We open to talking to good people. Just say hello, and we will
                 start productive cooperation. Start your own success story.
               </p>
             </div>

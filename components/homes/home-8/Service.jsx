@@ -130,7 +130,7 @@ export default function Service() {
                   <h4 className="services-title">Badminton Court</h4>
                   <p className="text-gray mb-0">
                     In our flat, we have a dedicated badminton court for
-                    residents to enjoy. It's a great space for fitness and
+                    residents to enjoy. It&apos;s a great space for fitness and
                     recreation right at home.
                   </p>
                 </div>
@@ -159,8 +159,8 @@ export default function Service() {
                   <p className="text-gray mb-0">
                     We have an Olympic-size swimming pool for those who enjoy
                     serious swimming, along with a separate pool designed
-                    specifically for women and kids. It's the perfect setup for
-                    both fitness and family fun.
+                    specifically for women and kids. It&apos;s the perfect setup
+                    for both fitness and family fun.
                   </p>
                 </div>
               </div>
@@ -187,8 +187,8 @@ export default function Service() {
                   <h4 className="services-title">Football Court</h4>
                   <p className="text-gray mb-0">
                     We have a full-size football court available for everyone to
-                    enjoy. It's perfect for playing matches or practicing your
-                    skills with plenty of space to move.
+                    enjoy. It&apos;s perfect for playing matches or practicing
+                    your skills with plenty of space to move.
                   </p>
                 </div>
               </div>
@@ -215,8 +215,8 @@ export default function Service() {
                   <h4 className="services-title">Basketball Court</h4>
                   <p className="text-gray mb-0">
                     We have a full-size basketball court available for
-                    residents. It's ideal for games, practice, or just shooting
-                    some hoops with friends.
+                    residents. It&apos;s ideal for games, practice, or just
+                    shooting some hoops with friends.
                   </p>
                 </div>
               </div>
@@ -243,8 +243,9 @@ export default function Service() {
                   <h4 className="services-title">Gym</h4>
                   <p className="text-gray mb-0">
                     We have a fully equipped gym for residents, offering
-                    everything you need for a great workout. It's a convenient
-                    and well-maintained space for fitness enthusiasts.
+                    everything you need for a great workout. It&apos;s a
+                    convenient and well-maintained space for fitness
+                    enthusiasts.
                   </p>
                 </div>
               </div>
@@ -271,8 +272,8 @@ export default function Service() {
                   <h4 className="services-title">Jogging Track</h4>
                   <p className="text-gray mb-0">
                     We have a dedicated jogging track, perfect for morning runs
-                    or evening strolls. It's a great way to stay active in a
-                    peaceful, outdoor setting.
+                    or evening strolls. It&apos;s a great way to stay active in
+                    a peaceful, outdoor setting.
                   </p>
                 </div>
               </div>
@@ -297,7 +298,7 @@ export default function Service() {
                   <h4 className="services-title">Table Tennis</h4>
                   <p className="text-gray mb-0">
                     We have a table tennis area available for residents to enjoy
-                    some fun and competitive games. It's a great spot for
+                    some fun and competitive games. It&apos;s a great spot for
                     friendly matches and improving your skills.
                   </p>
                 </div>

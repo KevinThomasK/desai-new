@@ -12,8 +12,9 @@ export default function Hero4() {
           <div className="col-lg-6 d-flex align-items-center mb-md-60 mb-sm-30 z-index-1">
             <div className="hs-title-overlap w-100 text-center text-lg-start">
               <h2 className="section-descr-large mb-30 mb-sm-20 wow fadeInUp">
-                Hey! I'm Jane Garsia.
+                Hey! I&apos;m Jane Garsia.
               </h2>
+
               <h1 className="hs-title-5 uppercase font-alt mb-40 mb-sm-30">
                 <span className="d-block wow fadeRotateIn"> Freelance </span>
                 <span
