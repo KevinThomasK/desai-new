@@ -51,7 +51,7 @@ export default function Contact() {
         <div className="col-lg-7 d-flex align-items-strech">
           <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
             <h3 className="section-title-small mt-n10 mb-40 mb-sm-30">
-              We'd love to hear from you
+              Wed love to hear from you
             </h3>
             {/* Contact Form */}
             <form

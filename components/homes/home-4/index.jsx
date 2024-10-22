@@ -176,7 +176,7 @@ export default function Home4({ onePage = false, dark = false }) {
               </div>
               <p className="section-descr-medium mb-50 mb-sm-40">
                 Looking for exclusive marketing services? Contact us and get
-                free online consultation for your brand or your client's brand.
+                free online consultation for your brand or your clients brand.
               </p>
               <div className="local-scroll text-center">
                 {onePage ? (
