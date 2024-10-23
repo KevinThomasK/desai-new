@@ -52,7 +52,7 @@ export const portfolioItems = [
 export const portfolios1 = [
   {
     id: 7,
-    className: "work-item mt-90 mt-md-0 mix development",
+    className: "work-item mt-90 mt-md-0 mix development ",
     href: "main-portfolio-single-1.html",
     linkClassName: "work-lightbox-link mfp-image",
     imgSrc: "/assets/images/dd/m1.png",
@@ -63,7 +63,7 @@ export const portfolios1 = [
   },
   {
     id: 8,
-    className: "work-item mix branding design",
+    className: "work-item mix branding design ",
     href: "main-portfolio-single-1.html",
     linkClassName: "work-ext-link",
     imgSrc: "/assets/images/dd/m2.png",

@@ -7273,7 +7273,6 @@ img.services-image {
 }
 
 .light-content .services-7-tabs>li>a.active:before {
-
   background: var(--gradient-primary-1-b);
   opacity: 1;
 }
@@ -8264,7 +8263,6 @@ img.services-image {
 }
 
 .works-filter.works-filter-elegant a.active:before {
-
   opacity: 0.15;
 }
 
@@ -8544,7 +8542,6 @@ img.services-image {
 }
 
 .works-filter.works-filter-bold a.active:before {
-
   opacity: 1;
 }
 
@@ -14482,4 +14479,212 @@ html:not(.mobile) .owl-animate-fadeInDown {
 
 .works-grid.grid-intro-2 .work-item .work-descr {
   font-size: 16px;
+}
+
+
+.service-img {
+  width: 100%;
+  height: 200px;
+  /* Adjust the height as necessary */
+  object-fit: cover;
+  /* Ensures the image maintains aspect ratio and is cropped properly */
+}
+
+
+/* custom stickymodal */
+.custom-img {
+  object-fit: contain;
+}
+
+.fixedcta {
+  border-radius: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  background: linear-gradient(91deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100.64%);
+
+  /* background: linear-gradient(91deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100.64%); */
+  backdrop-filter: blur(24px);
+  padding: 6px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 10px;
+  z-index: 10;
+}
+
+
+.fixedcta h5 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  padding: 15px;
+}
+
+.fixedcta h5 svg {
+  border-radius: 7px;
+  background: #F7F7F7;
+  backdrop-filter: blur(7.199999809265137px);
+  margin-right: 6px;
+}
+
+.fixedcta .btn {
+  border-radius: 7px;
+  background: #0F2C94;
+  backdrop-filter: blur(7.199999809265137px);
+  color: var(--icon-color, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 20px;
+  width: 180px;
+  text-align: center;
+}
+
+.fixedcta .btnn {
+  border-radius: 7px;
+
+  backdrop-filter: blur(7.199999809265137px);
+  color: var(--icon-color, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  width: 50px;
+  text-align: center;
+}
+
+.fixedcta .btn svg {
+  margin-right: 5px;
+}
+
+
+.fixedcta .btn_black {
+  border-radius: 7px;
+  background: #B17273;
+  backdrop-filter: blur(7.199999809265137px);
+  color: var(--icon-color, #FFF);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 20px;
+  margin-left: 11px;
+  width: 180px;
+  text-align: center;
+}
+
+.fixedcta .btn_black svg {
+  margin-right: 5px;
+}
+
+/* custom stickymodal end */
+
+
+/* unique modal style start */
+/* Modal backdrop */
+.unique-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Slightly darker background */
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Modal container */
+.unique-modal-container {
+  width: 80vw;
+  /* Adjusted width */
+  max-width: 600px;
+  /* Maximum size to avoid being too large */
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  /* Slightly less rounding */
+  overflow: hidden;
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.3);
+  /* More pronounced shadow */
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+/* Modal header */
+.unique-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  /* More padding */
+  background-color: #f8f9fa;
+  /* Light background for the header */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Close button */
+.unique-close-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.2s ease;
+}
+
+.unique-close-btn:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Modal body */
+.unique-modal-body {
+  background-color: #e0f7f1;
+  padding: 1rem;
+  /* Increased padding */
+  overflow-y: auto;
+  max-height: 70vh;
+  /* Keep content scrollable but contained */
+}
+
+/* Disable body scroll when modal is open */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* unique modal style end */
+
+
+.compact-table td {
+  padding: 4px 8px;
+  /* Less padding for compact look */
+  font-size: 14px;
+  /* Smaller font size */
+  line-height: 1.2;
+  /* Reduced line-height */
+}
+
+table.table-sm {
+  margin-bottom: 0;
+  /* Remove bottom margin if not needed */
+}
+
+
+
+
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }

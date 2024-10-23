@@ -1,4 +1,7 @@
+"use client";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
+import { ModalTrigger } from "@/components/Modal";
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
   {
@@ -6,8 +9,17 @@ const ParallaxContainer = dynamic(
   }
 );
 export default function Hero2() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
   return (
     <>
+      <ModalTrigger isOpen={isModalOpen} onClose={closeModal} />
       {/* Top Dark Gradient Overlay */}
       <div className="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-dark-1 opacity-07" />
       {/* End Top Dark Gradient Overlay */}
@@ -37,12 +49,12 @@ export default function Hero2() {
                 className="local-scroll wow fadeInUp wch-unset"
                 data-wow-delay="0.4s"
               >
-                <a
-                  href="#contact"
+                <button
+                  onClick={openModal}
                   className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                 >
                   <span>Enquire Now</span>
-                </a>
+                </button>
               </div>
             </div>
             {/* End Home Section Text */}
