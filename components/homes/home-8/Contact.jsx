@@ -95,6 +95,20 @@ export default function Contact() {
                   </div>
                   {/* End Email */}
                 </div>
+                {/* Name */}
+                <div className="form-group">
+                  <label htmlFor="phone">Phone Number</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    className="input-lg round form-control"
+                    placeholder="Enter your phone number"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                {/* End Name */}
               </div>
               {/* Message */}
               <div className="form-group">

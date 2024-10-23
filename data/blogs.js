@@ -205,7 +205,7 @@ export const blogs7 = [
 
 export const blogs8 = [
   {
-    id: 20,
+    id: "https://www.youtube.com/watch?v=5-oDnaIVnmk",
     imageSrc: "/assets/images/dd/v3.webp",
     title: "Mrs Twinkle Tony",
     date: "DD Tech Valley",
@@ -214,7 +214,7 @@ export const blogs8 = [
     rellaxPercentage: "0.37",
   },
   {
-    id: 21,
+    id: "https://www.youtube.com/watch?v=xg9lOxbgDRs",
     imageSrc: "/assets/images/dd/v2.jpg",
     title: "Mr Anandakutan T K",
     date: "DD Tech Valley",
@@ -223,7 +223,7 @@ export const blogs8 = [
     rellaxPercentage: "",
   },
   {
-    id: 22,
+    id: "https://www.youtube.com/watch?v=NOw97SZ5crs",
     imageSrc: "/assets/images/dd/v5.jpg",
     title: "Mr Ajayan Gopalakrishnakurup",
     date: "DD Tech Valley",

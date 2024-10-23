@@ -12,10 +12,8 @@ const ParallaxContainer = dynamic(
   }
 );
 export const metadata = {
-  title:
-    "Home 4 Image Parallax Onepage || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Desai Homes",
+  description: "Desai Homes",
 };
 export default function Home4ImageParallaxOnepage() {
   return (

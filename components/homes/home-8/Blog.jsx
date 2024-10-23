@@ -1,9 +1,28 @@
 "use client";
+import { useState } from "react";
 import { blogs8 } from "@/data/blogs";
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import VideoModal from "@/components/VideoModal";
+import { Navigation } from "swiper/modules";
+
 export default function Blog() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [videoUrl, setVideoUrl] = useState("");
+
+  const openModal = (url) => {
+    // Extract video ID from the YouTube URL
+    const videoId = url.split("v=")[1]; // This extracts the part after 'v='
+    const embedUrl = `https://www.youtube.com/embed/${videoId}`; // Construct the embed URL
+    setVideoUrl(embedUrl);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setVideoUrl("");
+  };
   return (
     <>
       <div className="row">
@@ -32,27 +51,38 @@ export default function Blog() {
               ${index == 2 ? "mt-n140 mt-md-0" : ""}
             `}
             >
-              <div className="post-prev-2-img">
-                <Link href={`/modern-blog-single/${post.id}`}>
-                  <Image
-                    src={post.imageSrc}
-                    width={700}
-                    height={479}
-                    alt="Image Description"
-                  />
-                </Link>
-              </div>
-              <h3 className="post-prev-2-title">
-                <Link href={`/modern-blog-single/${post.id}`}>
-                  {post.title}
-                </Link>
-              </h3>
+              <button
+                onClick={() => openModal(post.id)}
+                className="post-prev-2-img"
+                style={{ border: "none" }}
+              >
+                <Image
+                  src={post.imageSrc}
+                  width={700}
+                  height={479}
+                  alt="Image Description"
+                />
+              </button>
+              <h3 className="post-prev-2-title">{post.title}</h3>
               <div className="post-prev-2-info">{post.date}</div>
             </div>
           </div>
         ))}
         {/* End Post Item */}
       </div>
+      <VideoModal isOpen={isModalOpen} onClose={closeModal}>
+        <div className="video-container">
+          <iframe
+            width="100%"
+            height="400"
+            src={videoUrl} // The URL for the iframe is the constructed YouTube embed URL
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="YouTube video player"
+          ></iframe>
+        </div>
+      </VideoModal>
       {/* End Blog Grid */}
       {/* Newsletter Form */}
     </>

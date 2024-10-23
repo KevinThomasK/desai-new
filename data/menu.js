@@ -173,10 +173,10 @@ export const corporateMultipageDark = [
 
 export const corporateOnepage = [
   { href: "#home", text: "Home", className: "active" },
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#portfolio", text: "Portfolio" },
-  { href: "#blog", text: "Blog" },
+  { href: "#portfolio", text: "Projects" },
+  { href: "#services", text: "Amenities" },
+
+  { href: "#blog", text: "Testimonials" },
   { href: "#contact", text: "Contact" },
 ];
 

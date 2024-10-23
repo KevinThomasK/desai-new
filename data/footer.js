@@ -5,10 +5,7 @@ export const footerLinks = [
 ];
 
 export const footerLinks2 = [
-  { text: "Privacy Policy", href: "#" },
-  { text: "Terms & Conditions", href: "#" },
-  { text: "Presskit", href: "#" },
-  { text: "Credits", href: "#" },
+  { text: "Privacy Policy", href: "https://www.desaihomes.com/privacy-policy" },
 ];
 
 export const socialLinks = [
@@ -49,9 +46,9 @@ export const socialMediaLinks = [
 ];
 
 export const navigationLinks = [
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#portfolio", text: "Portfolio" },
-  { href: "#blog", text: "Blog" },
+  { href: "#home", text: "Home", className: "active" },
+  { href: "#portfolio", text: "Projects" },
+  { href: "#services", text: "Amenities" },
+  { href: "#blog", text: "Testimonials" },
   { href: "#contact", text: "Contact" },
 ];

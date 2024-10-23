@@ -19,14 +19,14 @@ export default function Footer4() {
         <div className="row">
           <div className="col-lg-6 mb-md-60">
             <h2 className="section-title mb-60 mb-sm-40">
-              Ready to get started with Resonance Template?
+              Discover your dream apartment today!
             </h2>
             <div className="local-scroll">
               <a
                 href="#contact"
                 className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
               >
-                <span>Get a Consultation</span>
+                <span>Enquire Now</span>
               </a>
             </div>
           </div>
@@ -57,25 +57,10 @@ export default function Footer4() {
       {/* Footer Text */}
       <div className="row">
         <div className="col-md-6 mb-sm-40">
-          Made with love for great people. <br />© IB-Themes{" "}
-          {new Date().getFullYear()}.
+          All Rights Reserved <br />© Desai Homes {new Date().getFullYear()}.
         </div>
         {/* Social Links */}
-        <div className="col-md-6 footer-2-social-links text-md-end mb-md-40">
-          {socialMediaLinks.map((elm, i) => (
-            <React.Fragment key={i}>
-              <a
-                href={elm.href}
-                title="Facebook"
-                rel="noopener nofollow"
-                target="_blank"
-              >
-                <span className="visually-hidden">{elm.name}</span>
-                <i className={elm.iconClass} />
-              </a>{" "}
-            </React.Fragment>
-          ))}
-        </div>
+
         {/* End Social Links */}
       </div>
       {/* End Footer Text */}
