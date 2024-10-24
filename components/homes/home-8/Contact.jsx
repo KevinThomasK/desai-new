@@ -2,6 +2,7 @@
 import { contactItems } from "@/data/contact";
 import React from "react";
 import Image from "next/image";
+
 export default function Contact() {
   return (
     <>
@@ -43,10 +44,11 @@ export default function Contact() {
                 )}
               </React.Fragment>
             ))}
-            {/* End Phone */}
+            {/* End Address */}
           </div>
         </div>
         {/* End Left Column */}
+
         {/* Right Column */}
         <div className="col-lg-7 d-flex align-items-strech">
           <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
@@ -95,43 +97,49 @@ export default function Contact() {
                   </div>
                   {/* End Email */}
                 </div>
-                {/* Name */}
-                <div className="form-group">
-                  <label htmlFor="phone">Phone Number</label>
+              </div>
+
+              {/* Phone Number */}
+              <div className="form-group">
+                <label htmlFor="phone">Phone Number</label>
+                <div className="relative flex items-center">
                   <input
                     type="text"
                     name="phone"
                     id="phone"
-                    className="input-lg round form-control"
-                    placeholder="Enter your phone number"
+                    className="input-lg round form-control pl-10 ml-20" // Add margin left to input for spacing
                     required
                     aria-required="true"
+                    placeholder="+91"
                   />
                 </div>
-                {/* End Name */}
               </div>
-              {/* Message */}
+              {/* End Phone Number */}
+
+              {/* Project Selection Dropdown */}
               <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  className="input-lg round form-control"
-                  style={{ height: 132 }}
-                  placeholder="Enter your message"
-                  defaultValue={""}
-                />
+                <label htmlFor="project">Choose Project</label>
+                <div className="relative">
+                  <select
+                    name="project"
+                    id="project"
+                    className="input-lg round form-control appearance-none"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select a project
+                    </option>
+                    <option value="hippodrome">Hippodrome</option>
+                    <option value="galleria">Galleria</option>
+                    <option value="pavilion">Pavilion</option>
+                  </select>
+                </div>
               </div>
+              {/* End Project Selection */}
+
               <div className="row">
                 <div className="col-md-6 col-xl-7 d-flex align-items-center">
                   {/* Inform Tip */}
-                  {/* <div className="form-tip w-100 pt-3">
-                    <i className="icon-info size-16" />
-                    All the fields are required. By sending the form you agree
-                    to the <a href="#">Terms &amp; Conditions</a> and{" "}
-                    <a href="#">Privacy Policy</a>.
-                  </div> */}
-                  {/* End Inform Tip */}
                 </div>
                 <div className="col-md-6 col-xl-5 mt-sm-20">
                   {/* Send Button */}
