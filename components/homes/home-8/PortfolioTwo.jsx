@@ -6,9 +6,9 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 const filters = [
-  { name: "Galleria", category: "all" },
-  { name: "Pavillion", category: "branding" },
-  { name: "Hippodrome", category: "design" },
+  { name: "Galleria", category: "galleria" },
+  { name: "Pavillion", category: "pavillion" },
+  { name: "Hippodrome", category: "hippodrome" },
 ];
 export default function Portfolio() {
   const [currentCategory, setCurrentCategory] = useState("all");
@@ -26,6 +26,10 @@ export default function Portfolio() {
     imagesloaded(isotopContainer.current).on("progress", function () {
       // Trigger Isotope layout
       isotope.current.layout();
+    });
+
+    isotope.current.arrange({
+      filter: ".galleria",
     });
   };
   const updateCategory = (val) => {
@@ -76,7 +80,7 @@ export default function Portfolio() {
       >
         {/* Work Item (Lightbox) */}
         <Gallery>
-          {portfolios1.slice(0, 6).map((item, index) => (
+          {portfolios1.map((item, index) => (
             <li key={index} className={item.className}>
               {item.description == "Lightbox" ? (
                 <a className={item.linkClassName}>
