@@ -3,13 +3,13 @@ import Service from "./Service";
 import Portfolio from "./Portfolio";
 import PortfolioTwo from "./PortfolioTwo";
 import Blog from "./Blog";
-import Marquee from "./Marquee";
+//import Marquee from "./Marquee";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Link from "next/link";
-import Accordion from "./Accordion";
+//import Accordion from "./Accordion";
 import About from "./About";
-import Achievement from "./Achievement";
+//import Achievement from "./Achievement";
 
 export default function Home8({
   onePage = false,

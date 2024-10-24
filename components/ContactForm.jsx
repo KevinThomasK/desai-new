@@ -88,7 +88,8 @@ const ContactForm = () => {
         className="contact-form rounded"
         style={{
           backgroundColor: "#e0f7f1", // Light background color
-          padding: "20px",
+          paddingBottom: "20px",
+          paddingTop: "20px",
         }}
       >
         <h3
@@ -97,6 +98,7 @@ const ContactForm = () => {
             marginBottom: "10px",
             color: "#333333", // Darker text color
             fontSize: "25px",
+            fontWeight: "600", // Slightly bolder font
           }}
         >
           Book A Project Now
@@ -107,7 +109,7 @@ const ContactForm = () => {
             <label
               htmlFor="name"
               className="form-label"
-              style={{ color: "#555" }}
+              style={{ color: "#555", fontWeight: "500" }} // Slightly bolder label
             >
               Name
             </label>
@@ -119,9 +121,12 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleInputChange}
               style={{
-                backgroundColor: "white", // Light background for inputs
+                backgroundColor: "#ffffff", // Light background for inputs
                 border: "1px solid #ccc", // Subtle border
+                borderRadius: "5px", // Soft corners
                 color: "#333", // Darker text color
+                padding: "10px", // More padding for comfort
+                fontSize: "16px", // Slightly larger font size
               }}
             />
           </div>
@@ -132,29 +137,46 @@ const ContactForm = () => {
               <label
                 htmlFor="phone"
                 className="form-label"
-                style={{ color: "#555" }}
+                style={{ color: "#555", fontWeight: "500" }} // Slightly bolder label
               >
                 Phone
               </label>
-              <input
-                type="text"
-                className="form-control premium-input"
-                id="phone"
-                placeholder="Enter phone number"
-                value={formData.phone}
-                onChange={handleInputChange}
-                style={{
-                  backgroundColor: "white",
-                  border: "1px solid #ccc",
-                  color: "#333",
-                }}
-              />
+              <div className="input-group">
+                <span
+                  className="input-group-text"
+                  style={{
+                    backgroundColor: "#e0f7f1", // Light background for prefix
+                    border: "1px solid #ccc",
+                    borderRadius: "5px 0 0 5px", // Soft corners on the left
+                    color: "#333",
+                    fontWeight: "500",
+                  }}
+                >
+                  +91
+                </span>
+                <input
+                  type="text"
+                  className="form-control premium-input"
+                  id="phone"
+                  placeholder="Enter phone number"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  style={{
+                    backgroundColor: "#ffffff",
+                    border: "1px solid #ccc",
+                    borderRadius: "0 5px 5px 0", // Soft corners on the right
+                    color: "#333",
+                    padding: "10px",
+                    fontSize: "16px",
+                  }}
+                />
+              </div>
             </div>
             <div className="col-md-6">
               <label
                 htmlFor="email"
                 className="form-label"
-                style={{ color: "#555" }}
+                style={{ color: "#555", fontWeight: "500" }} // Slightly bolder label
               >
                 Email
               </label>
@@ -166,36 +188,61 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 style={{
-                  backgroundColor: "white",
+                  backgroundColor: "#ffffff",
                   border: "1px solid #ccc",
+                  borderRadius: "5px", // Soft corners
                   color: "#333",
+                  padding: "10px",
+                  fontSize: "16px",
                 }}
               />
             </div>
           </div>
 
-          {/* Message - Textarea */}
+          {/* Dropdown for Project Selection */}
           <div className="mb-3">
             <label
-              htmlFor="message"
+              htmlFor="project"
               className="form-label"
-              style={{ color: "#555" }}
+              style={{ color: "#555", fontWeight: "500" }} // Slightly bolder label
             >
-              Message
+              Choose Project
             </label>
-            <textarea
-              className="form-control premium-input"
-              id="message"
-              placeholder="Enter your message"
-              value={formData.message}
-              onChange={handleInputChange}
-              style={{
-                height: "70px",
-                backgroundColor: "white",
-                border: "1px solid #ccc",
-                color: "#333",
-              }}
-            />
+            <div style={{ position: "relative" }}>
+              <select
+                className="form-control premium-input"
+                id="project"
+                value={formData.project}
+                onChange={handleInputChange}
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #ccc",
+                  borderRadius: "5px", // Soft corners
+                  color: "#333",
+                  appearance: "none", // Remove default dropdown arrow
+                  padding: "10px 30px 10px 10px", // Space for the custom arrow
+                  fontSize: "16px",
+                }}
+              >
+                <option value="hippodrome">Hippodrome</option>
+                <option value="galleria">Galleria</option>
+                <option value="pavilion">Pavilion</option>
+              </select>
+              {/* Dropdown icon */}
+              <span
+                style={{
+                  position: "absolute",
+                  right: "10px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  pointerEvents: "none", // Make the icon not interactable
+                  fontSize: "20px", // Adjust the size of the icon
+                  color: "#555",
+                }}
+              >
+                ▼
+              </span>
+            </div>
           </div>
 
           {/* Centered Button */}
@@ -204,14 +251,21 @@ const ContactForm = () => {
               type="button"
               className="btn btn-primary premium-btn"
               style={{
-                backgroundColor: "darkblue", // Green background for button
+                background: "linear-gradient(90deg, #0066cc, #004d99)", // Gradient background
                 border: "none",
+                borderRadius: "5px", // Soft corners
                 padding: "10px 20px",
                 fontSize: "20px",
                 width: "100%",
-                marginTop: "20px",
+                color: "#ffffff", // White text for contrast
+                transition: "background 0.3s", // Smooth transition for hover effect
               }}
               onClick={handleSubmit}
+              onMouseEnter={(e) => (e.target.style.background = "#004d99")} // Darker on hover
+              onMouseLeave={(e) =>
+                (e.target.style.background =
+                  "linear-gradient(90deg, #0066cc, #004d99)")
+              } // Back to gradient
             >
               Submit
             </button>
