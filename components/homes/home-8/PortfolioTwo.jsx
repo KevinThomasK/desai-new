@@ -47,7 +47,7 @@ export default function Portfolio() {
   }, []);
   return (
     <div className="container">
-      <div className="row mb-60 mb-md-40">
+      <div className="row">
         <div className="col-lg-5">
           <h2 className="section-caption mb-xs-10">Floor Plans</h2>
           <h3 className="section-title mb-0">
@@ -107,7 +107,7 @@ export default function Portfolio() {
                   </div>
                   <div className="work-intro text-start">
                     <h3 className="work-title">{item.title}</h3>
-                    <div className="work-descr">{item.description}</div>
+                    {/* <div className="work-descr">{item.description}</div> */}
                   </div>
                 </a>
               ) : (

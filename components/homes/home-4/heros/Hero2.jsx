@@ -23,16 +23,19 @@ export default function Hero2() {
       {/* Top Dark Gradient Overlay */}
       <div className="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-dark-1 opacity-07" />
       {/* End Top Dark Gradient Overlay */}
-      <div className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120">
+      <div className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-0">
         {/* Home Section Content */}
         <div className="home-content">
           <div className="row">
             {/* Home Section Text */}
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
               <h1 className="hs-title-9 mb-40 mb-sm-20 wow fadeInUp">
-                Kerala’s No.1{" "}
-                <span style={{ color: "#1BB170" }}>Sports-Themed</span> Flats In
-                Trivandrum - Designed For Active Living.
+                Kerala’s{" "}
+                <span style={{ color: "#1BB170" }}>
+                  {" "}
+                  No.1 Sports-Themed Flats
+                </span>{" "}
+                in Trivandrum - Designed for Community Living.
               </h1>
               {/* <div className="row">
                 <div className="col-lg-10 offset-lg-1">

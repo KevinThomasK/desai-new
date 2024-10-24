@@ -15,15 +15,15 @@ export default function Header4({ links }) {
           <Image
             src="/assets/images/dd/logo.png"
             alt="Your Company Logo"
-            width={106}
-            height={36}
+            width={56}
+            height={18}
             className="light-mode-logo"
           />
           <Image
             src="/assets/images/dd/logo.png"
             alt="Your Company Logo"
-            width={106}
-            height={36}
+            width={56}
+            height={18}
             className="dark-mode-logo"
           />
         </a>
@@ -35,8 +35,18 @@ export default function Header4({ links }) {
         role="button"
         tabIndex={0}
       >
-        <i className="mobile-nav-icon" />
-        <span className="visually-hidden">Menu</span>
+        {/* <i className="mobile-nav-icon" />
+        <span className="visually-hidden">Menu</span> */}
+        <div className="inner-nav ">
+          <ul className="clearlist scroll-nav local-scroll justify-content-end scrollspyLinks">
+            <li>
+              <a href="tel:+19961766888">
+                <i className="mi-mobile size-24 color-primary-1 align-center" />
+                +91 (996) 176 6888
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       {/* Main Menu */}
       <div className="inner-nav desktop-nav">

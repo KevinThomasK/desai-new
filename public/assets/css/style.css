@@ -5076,8 +5076,8 @@ a.logo:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-top: var(--section-padding-y);
-  padding-bottom: var(--section-padding-y);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .small-section {
@@ -14687,4 +14687,6 @@ table.table-sm {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
+
 }

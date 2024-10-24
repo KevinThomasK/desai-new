@@ -39,7 +39,7 @@ export default function Service() {
                 aria-selected="true"
                 data-bs-toggle="tab"
               >
-                Badminton Court <span className="number">01</span>
+                Football Court <span className="number">01</span>
               </a>
             </li>
             <li role="presentation">
@@ -61,7 +61,7 @@ export default function Service() {
                 aria-selected="false"
                 data-bs-toggle="tab"
               >
-                Football Court <span className="number">03</span>
+                Badminton Court <span className="number">03</span>
               </a>
             </li>
             <li role="presentation">
@@ -125,13 +125,13 @@ export default function Service() {
               <div className="services-text">
                 <div
                   className="services-text-container"
-                  style={{ background: "lightgreen" }}
+                  style={{ background: "#e6f7e6" }}
                 >
-                  <h4 className="services-title">Badminton Court</h4>
+                  <h4 className="services-title">Football Court (FIFA Size)</h4>
                   <p className="text-gray mb-0">
-                    In our flat, we have a dedicated badminton court for
-                    residents to enjoy. It&apos;s a great space for fitness and
-                    recreation right at home.
+                    We have a Fifa-Size Football Court available for everyone to
+                    enjoy. It&apos;s perfect for playing matches or practicing
+                    your skills with plenty of space to move.
                   </p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function Service() {
                 width={945}
                 height={1016}
                 className="services-image"
-                src="/assets/images/dd/a7.jpg"
+                src="/assets/images/dd/c9.jpg"
                 alt="Image Description"
               />
             </div>
@@ -153,7 +153,7 @@ export default function Service() {
               <div className="services-text">
                 <div
                   className="services-text-container"
-                  style={{ background: "lightgreen" }}
+                  style={{ background: "#e6f7e6" }}
                 >
                   <h4 className="services-title">Swimming Pool</h4>
                   <p className="text-gray mb-0">
@@ -182,13 +182,13 @@ export default function Service() {
               <div className="services-text">
                 <div
                   className="services-text-container"
-                  style={{ background: "lightgreen" }}
+                  style={{ background: "#e6f7e6" }}
                 >
-                  <h4 className="services-title">Football Court</h4>
+                  <h4 className="services-title">Badminton Court</h4>
                   <p className="text-gray mb-0">
-                    We have a full-size football court available for everyone to
-                    enjoy. It&apos;s perfect for playing matches or practicing
-                    your skills with plenty of space to move.
+                    In our flat, we have a dedicated badminton court for
+                    residents to enjoy. It&apos;s a great space for fitness and
+                    recreation right at home.
                   </p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default function Service() {
                 width={945}
                 height={1016}
                 className="services-image"
-                src="/assets/images/dd/c9.jpg"
+                src="/assets/images/dd/a7.jpg"
                 alt="Image Description"
               />
             </div>
@@ -210,7 +210,7 @@ export default function Service() {
               <div className="services-text">
                 <div
                   className="services-text-container"
-                  style={{ background: "lightgreen" }}
+                  style={{ background: "#e6f7e6" }}
                 >
                   <h4 className="services-title">Basketball Court</h4>
                   <p className="text-gray mb-0">
@@ -238,7 +238,7 @@ export default function Service() {
               <div className="services-text">
                 <div
                   className="services-text-container"
-                  style={{ background: "lightgreen" }}
+                  style={{ background: "#e6f7e6" }}
                 >
                   <h4 className="services-title">Gym</h4>
                   <p className="text-gray mb-0">
@@ -267,7 +267,7 @@ export default function Service() {
               <div className="services-text">
                 <div
                   className="services-text-container"
-                  style={{ background: "lightgreen" }}
+                  style={{ background: "#e6f7e6" }}
                 >
                   <h4 className="services-title">Jogging Track</h4>
                   <p className="text-gray mb-0">
@@ -293,7 +293,7 @@ export default function Service() {
               <div className="services-text">
                 <div
                   className="services-text-container"
-                  style={{ background: "lightgreen" }}
+                  style={{ background: "#e6f7e6" }}
                 >
                   <h4 className="services-title">Table Tennis</h4>
                   <p className="text-gray mb-0">

@@ -8,6 +8,8 @@ import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Link from "next/link";
 import Accordion from "./Accordion";
+import About from "./About";
+import Achievement from "./Achievement";
 
 export default function Home8({
   onePage = false,
@@ -56,36 +58,98 @@ export default function Home8({
           dark ? "bg-dark-1 light-content" : ""
         }`}
         id="services"
+        style={{
+          background: " #fef5e7",
+          borderTop: "1px solid lightgreen",
+          borderBottom: "1px solid lightgreen",
+          marginTop: "130px",
+        }}
       >
         {" "}
-        <hr className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-40`} />
-        <Service />
+        <Service />{" "}
       </section>
+      {/* <hr className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-40`} /> */}
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         }`}
-        style={{ marginTop: "-100px" }}
         id="portfoliotwo"
       >
         {" "}
-        <hr className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-40`} />
         <PortfolioTwo />
       </section>
+      <section
+        className={`page-section  scrollSpysection  bg-scroll ${
+          dark
+            ? "bg-dark-1 bg-gradient-gray-dark-2 light-content"
+            : "bg-gradient-gray-light-2"
+        }`}
+        id="about"
+      >
+        <About />
+      </section>
+
+      <section
+        className="d-flex align-items-center"
+        style={{
+          background: "black",
+          color: "white",
+          marginTop: "20px",
+        }}
+      >
+        <div className="container" style={{ paddingTop: "30px" }}>
+          <div className="row">
+            {/* Left Column */}
+            <div className="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+              <h1
+                className="mb-4"
+                style={{ fontSize: "3rem", fontWeight: "bold" }}
+              >
+                India's Oldest NIFT | NID Entrance Institute
+              </h1>
+              <a href="#contact" className="btn btn-light btn-lg mb-sm-20">
+                Contact Now
+              </a>
+            </div>
+
+            {/* Right Column - 2x2 Grid */}
+            <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+              <div className="row text-center w-100">
+                <div className="col-6 mb-4">
+                  <h2 className="display-4">32+</h2>
+                  <p>Years Of Experience</p>
+                </div>
+                <div className="col-6">
+                  <h2 className="display-4">6500+</h2>
+                  <p>Satisfied Clients</p>
+                </div>
+                <div className="col-6 mb-4">
+                  <h2 className="display-4">61+</h2>
+                  <p>Ongoing / Completed Projects</p>
+                </div>
+                <div className="col-6">
+                  <h2 className="display-4">8.5 Million</h2>
+                  <p>Sq.Ft Construction</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section
         className={`page-section scrollSpysection  pb-0  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="blog"
-        style={{ marginTop: "-100px" }}
       >
         <div className="container">
           <div className="mb-100 mb-md-40">
             <div className="row">
               <div className="col-sm-6">
-                <h2 className="section-caption mb-0 mb-xs-10 black">
+                {/* <h2 className="section-caption mb-0 mb-xs-10 black">
                   Our Customer
-                </h2>
+                </h2> */}
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
                 {onePage ? (
@@ -170,11 +234,11 @@ export default function Home8({
           <div className="row mb-80 mb-sm-60">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                Lets have a conversation
+                Contact Desai Homes
               </h2>
               <p className="section-descr dark-white mb-0">
-                We open to talking to good people. Just say hello, and we will
-                start productive cooperation. Start your own success story.
+                Get in touch with Desai Homes to get guidance on finding the
+                best residential apartment.
               </p>
             </div>
           </div>{" "}
