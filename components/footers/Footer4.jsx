@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer4() {
   return (
-    <div className="container position-relative py-3">
+    <div className="container position-relative py-0">
       <div className="row justify-content-between align-items-center">
         {/* Left Side - Copyright */}
         <div className="col-md-6 mb-sm-40">

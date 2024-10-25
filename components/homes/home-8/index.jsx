@@ -79,10 +79,10 @@ export default function Home8({
         <PortfolioTwo />
       </section>
       <section
-        className={`page-section  scrollSpysection  bg-scroll ${
+        className={`page-section mt-5 pt-5 scrollSpysection  bg-scroll ${
           dark
             ? "bg-dark-1 bg-gradient-gray-dark-2 light-content"
-            : "bg-gradient-gray-light-2"
+            : "bg-gradient-gray-light-2 pt-8 "
         }`}
         id="about"
       >
@@ -216,8 +216,8 @@ export default function Home8({
         </div>
       </section>
       <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
+        className={` scrollSpysection  ${
+          dark ? "bg-dark-1 light-content" : "mb-5"
         } `}
         id="contact"
       >

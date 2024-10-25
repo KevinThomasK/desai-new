@@ -38,7 +38,7 @@ export default function Home4ImageParallaxOnepage() {
 
             <Home8 onePage />
           </main>
-          <footer className="footer-2 pb-50">
+          <footer className="footer-2 pb-10">
             <Footer4 />
           </footer>
         </div>{" "}
