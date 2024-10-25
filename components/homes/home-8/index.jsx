@@ -151,65 +151,7 @@ export default function Home8({
                   Our Customer
                 </h2> */}
               </div>
-              <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
-                {onePage ? (
-                  <>
-                    <a
-                      href="#contact"
-                      className="link-hover-anim align-middle"
-                      data-link-animate="y"
-                    >
-                      <span className="link-strong link-strong-unhovered">
-                        Testimonials
-                        <i
-                          className="icon-arrow-right2 size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
-                      >
-                        Testimonials
-                        <i
-                          className="icon-arrow-right2 size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                    </a>
-                  </>
-                ) : (
-                  <>
-                    <Link
-                      href={`/modern-blog${dark ? "-dark" : ""}`}
-                      className="link-hover-anim align-middle"
-                      data-link-animate="y"
-                    >
-                      <span className="link-strong link-strong-unhovered">
-                        All news{" "}
-                        <i
-                          className="icon-arrow-right2 size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
-                      >
-                        All news{" "}
-                        <i
-                          className="icon-arrow-right2 size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                    </Link>
-                  </>
-                )}
-              </div>
             </div>
-            <hr
-              className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
-            />
           </div>
           <Blog />
           {/* End Newsletter Form */}
