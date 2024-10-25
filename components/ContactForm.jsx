@@ -85,11 +85,9 @@ const ContactForm = () => {
   return (
     <div className="container my-1">
       <div
-        className="contact-form rounded"
+        className="contact-form rounded cusm"
         style={{
           backgroundColor: "#e0f7f1", // Light background color
-          paddingBottom: "20px",
-          paddingTop: "20px",
         }}
       >
         <h3

@@ -14649,7 +14649,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
 /* Modal body */
 .unique-modal-body {
   background-color: #e0f7f1;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* Increased padding */
   overflow-y: auto;
   max-height: 70vh;
@@ -14716,7 +14716,10 @@ table.table-sm {
   /* Example color, you can change it as needed */
 }
 
-
+.cusm {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
 
 @media (min-width: 576px) {
   .col-sm-6 {
@@ -14724,5 +14727,9 @@ table.table-sm {
     max-width: 50%;
   }
 
+  .cusm {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
 
 }
